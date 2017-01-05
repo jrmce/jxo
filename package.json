@@ -1,0 +1,33 @@
+{
+  "name": "jxo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "tslint \"src/**/*.ts\"",
+    "clean": "rimraf dist",
+    "dev": "ts-node index.ts",
+    "tsc": "tsc",
+    "build": "npm run clean && npm run tsc",
+    "start": "node dist/index.js"
+  },
+  "author": "JR McEntee",
+  "license": "MIT",
+  "dependencies": {
+    "rx-node": "^1.0.2",
+    "rxjs": "^5.0.2"
+  },
+  "devDependencies": {
+    "@types/chai": "^3.4.34",
+    "@types/mocha": "^2.2.35",
+    "@types/node": "^6.0.56",
+    "@types/rx": "^4.1.0",
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
+    "rimraf": "^2.5.4",
+    "ts-node": "^2.0.0",
+    "tslint": "^4.2.0",
+    "tslint-config-standard": "^2.0.0",
+    "typescript": "^2.1.4"
+  }
+}
